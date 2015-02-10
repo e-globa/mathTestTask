@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Test task</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="jquery.inputmask.js" ></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script src="main.js"> </script>
+</head>
+<body>
+ 
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Проверка</a></li>
+    <li><a href="#checkboxes">Установка</a></li>
+    
+  </ul>
+  <div id="tabs-1">
+    <div>
+      <button id="btnGenerateExample" onclick="btnGenerateExampleClick()">Сгенерировать выражение</button>
+      <br/>
+      <br/>
+       <label>Вычеслите выражение:</label>
+       <label id="example"></label>
+    </div>
+    <br/>
+    <div>
+       <input id="answer">
+       <button id="btnAnswer" onclick="btnClick()">Ответить</button>
+    </div>
+   <div>
+      <p style = "color:green">Правильных ответов: 
+      </p>
+      <label id="correctAnswersCount"></label>
+      <p style = "color:red">Не правильных ответов: </p>
+      <label id="unCorrectAnswersCount"></label>
+   </div>
+  </div>
+  <div id="checkboxes">
+    <input value="addition" type="checkbox">Сложение</input>
+    <br/>
+    <br/>
+    <input value="subtraction" type="checkbox"/>Вычитание</input>
+    <br/>
+    <br/>
+    <input value="multiplication" type="checkbox"/>Умножение</input>
+    <br/>
+    <br/>
+    <input value="division" type="checkbox"/>Деление (округление до целых)</input>
+  </div>
+  
+</div>
+ 
+ 
+</body>
+</html>
